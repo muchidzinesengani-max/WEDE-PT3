@@ -1,0 +1,5 @@
+# robots.txt for Mabaso Electrical Services
+User-agent: *
+Allow: /
+
+Sitemap: https://mabaso-electrical.netlify.app/sitemap.xml

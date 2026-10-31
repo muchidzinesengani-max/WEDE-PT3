@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mabaso Electrical Services</title>
+    <meta name="description" content="Contact Mabaso Electrical Services in Polokwane. Call, WhatsApp, or find our service locations on the map.">
+    <link rel="canonical" href="https://mabaso-electrical.netlify.app/contact.html">
+    <meta name="theme-color" content="#14304d">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mabaso Electrical Services">
+    <meta property="og:title" content="Contact Us | Mabaso Electrical Services">
+    <meta property="og:description" content="Contact Mabaso Electrical Services in Polokwane. Call, WhatsApp, or find our service locations on the map.">
+    <meta property="og:url" content="https://mabaso-electrical.netlify.app/contact.html">
+    <meta property="og:image" content="https://mabaso-electrical.netlify.app/images/electrical-technician-1200.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Mabaso <span>Electrical</span></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="enquiry.html">Get a Quote</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>Contact Mabaso Electrical Services</h1>
+        </div>
+    </div>
+
+    <!-- CONTACT DETAILS AND LOCATIONS -->
+    <section>
+        <div class="container">
+            <img width="800" height="800" class="page-image" src="images/electrical-technician-800.jpg" srcset="images/electrical-technician-400.jpg 400w, images/electrical-technician-800.jpg 800w, images/electrical-technician-1200.jpg 1200w" sizes="(max-width: 900px) 90vw, 1000px" loading="lazy" alt="Professional electrician working on an electrical panel">
+            <div class="contact-grid">
+
+                <!-- GENERAL CONTACT INFO -->
+                <div>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p style="margin-bottom: 20px; color: var(--colour-muted);">Reach out by phone,
+                        WhatsApp, or email, or fill in our <a href="enquiry.html"
+                        style="color: var(--colour-navy); font-weight:600;">quote request form</a>.</p>
+
+                    <p><strong>Phone:</strong> 082 000 0000</p>
+                    <p><strong>WhatsApp:</strong> 082 000 0000</p>
+                    <p><strong>Email:</strong> info@mabasoelectrical.co.za</p>
+                    <p><strong>Business Hours:</strong> Mon - Fri, 07:00 - 17:00 | Sat, 08:00 - 13:00</p>
+                    <p><strong>Emergency Call-Outs:</strong> Available on request, additional rates apply</p>
+                </div>
+
+                <!-- SERVICE AREA LOCATIONS -->
+                <div>
+                    <h2 class="section-title">Our Locations</h2>
+
+                    <div class="location-card" data-location="cbd">
+                        <h3>Polokwane CBD Office</h3>
+                        <p>Church Street, Polokwane Central, Limpopo</p>
+                    </div>
+
+                    <div class="location-card" data-location="bendor">
+                        <h3>Bendor Service Area</h3>
+                        <p>Bendor, Polokwane, Limpopo</p>
+                    </div>
+
+                    <!-- INTERACTIVE MAP: Leaflet + OpenStreetMap (js/script.js) -->
+                    <div id="map" class="leaflet-map" role="region" aria-label="Map showing our two service locations"></div>
+                    <noscript><p>The interactive map needs JavaScript.
+                        <a href="https://www.google.com/maps?q=Polokwane+CBD,+Limpopo" target="_blank" rel="noopener noreferrer">Open Polokwane in Google Maps</a>.</p></noscript>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHORT CONTACT FORM: for general questions. For a full quote
+         request with service type and job details, visitors are directed
+         to enquiry.html instead. -->
+    <section class="alt-bg">
+        <div class="container">
+            <h2 class="section-title">Send Us a Message</h2>
+            <p class="section-intro">Have a general question rather than a quote request? Send us a
+                message and we'll get back to you.</p>
+
+            <div class="form-wrapper">
+                <form id="contactForm" action="contact.html" method="post" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Full Name</label>
+                            <input type="text" id="contactName" name="contactName" placeholder="Your full name" autocomplete="name" minlength="2" maxlength="80" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address</label>
+                            <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" autocomplete="email" maxlength="120" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactReason">Type of Message</label>
+                        <select id="contactReason" name="contactReason" required>
+                            <option value="">Select a type</option>
+                            <option value="General question">General question</option>
+                            <option value="Existing job or follow-up">Existing job or follow-up</option>
+                            <option value="Feedback or compliment">Feedback or compliment</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="contactMessage" placeholder="How can we help?" minlength="10" maxlength="1000" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="contactResult" class="form-response" tabindex="-1" aria-live="polite" hidden></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Mabaso Electrical Services</h4>
+                    <p>Professional electrical services across Polokwane and the surrounding Limpopo
+                        region.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="enquiry.html">Get a Quote</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>082 000 0000</p>
+                    <p>info@mabasoelectrical.co.za</p>
+                    <p>Polokwane, Limpopo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mabaso Electrical Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

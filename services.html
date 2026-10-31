@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Mabaso Electrical Services</title>
+    <meta name="keywords" content="electrical services Polokwane, wiring, fault finding, DB board upgrade, COC certificate, solar ready">
+    <meta name="description" content="Residential and commercial electrical services in Polokwane: wiring, fault-finding, DB board upgrades, COC certificates and solar-ready installations.">
+    <link rel="canonical" href="https://mabaso-electrical.netlify.app/services.html">
+    <meta name="theme-color" content="#14304d">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mabaso Electrical Services">
+    <meta property="og:title" content="Our Services | Mabaso Electrical Services">
+    <meta property="og:description" content="Residential and commercial electrical services in Polokwane: wiring, fault-finding, DB board upgrades, COC certificates and solar-ready installations.">
+    <meta property="og:url" content="https://mabaso-electrical.netlify.app/services.html">
+    <meta property="og:image" content="https://mabaso-electrical.netlify.app/images/electrical-installation-1200.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Mabaso <span>Electrical</span></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+                <span></span><span></span><span></span>
+            </label>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="enquiry.html">Get a Quote</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>Electrical Services in Polokwane</h1>
+        </div>
+    </div>
+
+    <!-- FULL SERVICE LIST -->
+    <section>
+        <div class="container">
+            <p class="section-intro">We offer a full range of electrical services for residential and
+                commercial clients across Polokwane and the surrounding Limpopo region.</p>
+
+            <!-- SEARCH, FILTER AND SORT -->
+            <div class="service-tools">
+                <div class="form-group">
+                    <label for="serviceSearch">Search services</label>
+                    <input type="search" id="serviceSearch" placeholder="e.g. solar, COC, breaker" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="serviceSort">Sort by</label>
+                    <select id="serviceSort">
+                        <option value="default">Default order</option>
+                        <option value="az">Name A to Z</option>
+                        <option value="za">Name Z to A</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-group" role="group" aria-label="Filter services by type">
+                <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-filter="installations" aria-pressed="false">Installations</button>
+                <button type="button" class="filter-btn" data-filter="repairs" aria-pressed="false">Repairs &amp; Maintenance</button>
+                <button type="button" class="filter-btn" data-filter="compliance" aria-pressed="false">Compliance</button>
+            </div>
+            <p id="serviceStatus" class="service-status" aria-live="polite"></p>
+
+            <div class="card-grid" id="serviceGrid">
+                <div class="card" data-service="wiring" data-category="installations">
+                    <img width="800" height="436" class="card-image" src="images/electrical-installation-800.jpg" srcset="images/electrical-installation-400.jpg 400w, images/electrical-installation-800.jpg 800w, images/electrical-installation-1200.jpg 1200w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 280px" loading="lazy" alt="Electrician installing electrical wiring">
+                    <h3>Residential &amp; Commercial Wiring</h3>
+                    <p>New wiring installations, rewiring of older properties, and upgrades to meet
+                        current safety standards for both homes and businesses.</p>
+                </div>
+                <div class="card" data-service="fault-finding" data-category="repairs">
+                    <img width="800" height="435" class="card-image" src="images/electrical-testing-800.jpg" srcset="images/electrical-testing-400.jpg 400w, images/electrical-testing-800.jpg 800w, images/electrical-testing-1200.jpg 1200w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 280px" loading="lazy" alt="Electrician testing an electrical panel with a multimeter">
+                    <h3>Fault-Finding &amp; Repairs</h3>
+                    <p>Diagnosis and repair of tripping breakers, power outages, flickering lights, and
+                        other electrical faults, usually completed on the same visit.</p>
+                </div>
+                <div class="card" data-service="db-board" data-category="installations">
+                    <img width="800" height="435" class="card-image" src="images/electrical-testing-800.jpg" srcset="images/electrical-testing-400.jpg 400w, images/electrical-testing-800.jpg 800w, images/electrical-testing-1200.jpg 1200w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 280px" loading="lazy" alt="Electrical distribution board being inspected and tested">
+                    <h3>DB Board Upgrades</h3>
+                    <p>Distribution board replacements and upgrades to safely handle modern electrical
+                        loads and meet current regulations.</p>
+                </div>
+                <div class="card" data-service="coc" data-category="compliance">
+                    <img width="800" height="800" class="card-image" src="images/electrical-technician-800.jpg" srcset="images/electrical-technician-400.jpg 400w, images/electrical-technician-800.jpg 800w, images/electrical-technician-1200.jpg 1200w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 280px" loading="lazy" alt="Professional electrician working safely on electrical equipment">
+                    <h3>Certificates of Compliance (COC)</h3>
+                    <p>Inspection and issuing of COC certificates required for property sales, rentals,
+                        and insurance purposes.</p>
+                </div>
+                <div class="card" data-service="solar" data-category="installations">
+                    <img width="600" height="445" class="card-image" src="images/solar-installation-800.jpg" srcset="images/solar-installation-400.jpg 400w, images/solar-installation-800.jpg 800w, images/solar-installation-1200.jpg 1200w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 280px" loading="lazy" alt="Technicians installing solar panels on a roof">
+                    <h3>Solar-Ready Installations</h3>
+                    <p>Electrical groundwork and wiring to prepare homes and businesses for solar panel
+                        and inverter installations.</p>
+                </div>
+                <div class="card" data-service="maintenance" data-category="repairs">
+                    <img width="800" height="532" class="card-image" src="images/wiring-800.jpg" srcset="images/wiring-400.jpg 400w, images/wiring-800.jpg 800w, images/wiring-1200.jpg 1200w" sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 280px" loading="lazy" alt="Electrician working with electrical wiring and cables">
+                    <h3>Maintenance Contracts</h3>
+                    <p>Scheduled electrical maintenance for landlords and small businesses to prevent
+                        faults before they happen.</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 32px;">Not sure which service you need? <a href="enquiry.html"
+                class="btn btn-primary">Request a Free Quote</a></p>
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION: questions load from data/faqs.json -->
+    <section class="alt-bg">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-intro">Quick answers to the questions we hear most. Still stuck?
+                <a href="contact.html">Contact us</a> and we will help.</p>
+            <div id="faqList" class="accordion">
+                <noscript><p>Please turn on JavaScript to see our questions, or <a href="contact.html">contact us</a> directly.</p></noscript>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Mabaso Electrical Services</h4>
+                    <p>Professional electrical services across Polokwane and the surrounding Limpopo
+                        region.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <p><a href="about.html">About Us</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="enquiry.html">Get a Quote</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>082 000 0000</p>
+                    <p>info@mabasoelectrical.co.za</p>
+                    <p>Polokwane, Limpopo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mabaso Electrical Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
